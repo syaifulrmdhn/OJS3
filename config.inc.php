@@ -26,10 +26,10 @@
 
 ; Set this to On once the system has been installed
 ; (This is generally done automatically by the installer)
-installed = Off
+installed = On
 
 ; The canonical URL to the OJS installation (excluding the trailing slash)
-base_url = "http://pkp.sfu.ca/ojs"
+base_url = "http://localhost:8000"
 
 ; Session cookie name
 session_cookie_name = OJSSID
@@ -130,9 +130,9 @@ sitewide_privacy_statement = Off
 
 driver = mysqli
 host = localhost
-username = ojs
-password = ojs
-name = ojs
+username = root
+password = 
+name = ojs3
 ; Set the non-standard port and/or socket, if used
 ; port = 3306
 ; unix_socket = /var/run/mysqld/mysqld.sock
@@ -194,7 +194,7 @@ client_charset = utf-8
 ; Must be set to "Off" if not supported by the database server
 ; If enabled, must be the same character set as "client_charset"
 ; (although the actual name may differ slightly depending on the server)
-connection_charset = Off
+connection_charset = utf8
 
 
 ;;;;;;;;;;;;;;;;;
@@ -206,7 +206,7 @@ connection_charset = Off
 ; Complete path to directory to store uploaded files
 ; (This directory should not be directly web-accessible)
 ; Windows users should use forward slashes
-files_dir = files
+files_dir = "C:/laragon/www/ojs3/files"
 
 ; Path to the directory to store public uploaded files
 ; (This directory should be web-accessible and the specified path
@@ -408,7 +408,7 @@ result_cache_hours = 1
 oai = On
 
 ; OAI Repository identifier
-repository_id = ojs.pkp.sfu.ca
+repository_id = 
 
 ; Maximum number of records per request to serve via OAI
 oai_max_records = 100
